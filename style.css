@@ -1,0 +1,155 @@
+/* Apply sans-serif font family to the entire document body */
+body {
+    font-family: sans-serif;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: black;
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    width: 1440px; /* Set the maximum width of the navbar */
+    display: flex; /* Use flexbox for layout */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Styles for dropdown menus */
+.dropdown {
+    margin-top: 52px; /* Add margin space above the dropdown */
+    position: relative; /* Set position relative for absolute positioning within */
+    display: inline-block; /* Display as an inline block */
+}
+
+/* Styles for navigation links within the navbar */
+.navbar a {
+    opacity: 0.7; /* Set initial opacity */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 40px; /* Add margin space above each link */
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Position it absolutely in relation to the parent */
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Styles for links within the dropdown content */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover{
+    color: gray;
+    border-radius: 15%;
+}
+
+.Login{
+    margin-left: 540px;
+}
+
+.feature{
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.company{
+    cursor: pointer;
+}
+
+#snap{
+    margin-left: 150px;
+    margin-top: 40px;
+    color: gainsboro;
+}
+
+.register{
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 50px;
+    font-family: Italic;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+    color: black;
+}
+
+h1{
+    margin-left: 55px;
+    margin-top: 150px;
+    color: gray;
+}
+
+h3{
+    width: 50%;
+    margin-left: 55px;
+    color: gainsboro;
+}
+
+img{
+    width: 80vh;
+    float: right;
+    margin-top: -180px;
+    margin-right: 60px;
+}
+
+button{
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin-left: 55px;
+    font-family: Italic;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+
+@media screen and (max-width: 675px) {
+
+    body{
+        background-image: url(https://images.unsplash.com/photo-1639174326326-6e2ef8d8ae39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+    .navbar a {
+        width: 50%; /* Set the width of each link to 50% */
+        display: flex; /* Change display to flex */
+        flex-direction: column; /* Arrange links in a column */
+    }
+
+   .navbar #snap{
+    margin-left: 0;
+   }
+
+   a.Login{
+    margin-left: 0px;
+   }
+
+   a.register{
+    margin-left: 0px;
+   }
+
+   img{
+   display: none;
+   }
+   
+   h1{
+    color: white;
+   }
+   dropdown{
+    color: white;
+   }
+}
