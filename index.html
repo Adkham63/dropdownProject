@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropdown Project</title>
   <script src="https://use.fontawesome.com/d27a7f8381.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <!-- Navigation bar -->
@@ -56,3 +56,172 @@
 
 </body>
 </html>
+
+/* Apply sans-serif font family to the entire document body */
+body {
+    font-family: sans-serif;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: black;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    width: 100%; /* Use 100% width for responsiveness */
+    max-width: 1440px; /* Set the maximum width of the navbar */
+    margin: 0 auto; /* Center the navbar */
+    display: flex; /* Use flexbox for layout */
+    font-size: 16px;
+    font-weight: bold;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: #333; /* Change the background color for better contrast */
+}
+
+/* Styles for dropdown menus */
+.dropdown {
+    margin-top: 10px; /* Adjust margin space above the dropdown */
+    position: relative; /* Set position relative for absolute positioning within */
+    display: inline-block; /* Display as an inline block */
+}
+
+/* Styles for navigation links within the navbar */
+.navbar a {
+    opacity: 0.7; /* Set initial opacity */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 10px 0; /* Add margin space */
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Position it absolutely in relation to the parent */
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #333; /* Change the background color for better contrast */
+}
+
+/* Styles for links within the dropdown content */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Hover effect for dropdown links */
+.dropdown a:hover {
+    color: gray;
+    border-radius: 15%;
+}
+
+/* Additional styling for specific links */
+.Login {
+    margin-left: auto; /* Align to the right */
+}
+
+.feature {
+    margin-left: 10px; /* Adjust margin space */
+    cursor: pointer;
+}
+
+.company {
+    cursor: pointer;
+}
+
+#snap {
+    margin-left: 10px; /* Adjust margin space */
+    margin-top: 10px; /* Adjust margin space */
+    color: gainsboro;
+}
+
+.register {
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 10px; /* Adjust margin space */
+    font-family: Italic;
+    font-weight: bold;
+}
+
+/* Dropdown styles on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: black;
+}
+
+h1 {
+    margin-left: 10px; /* Adjust margin space */
+    margin-top: 10px; /* Adjust margin space */
+    color: gray;
+}
+
+h3 {
+    width: 100%; /* Full width for smaller screens */
+    margin-left: 10px; /* Adjust margin space */
+    color: gainsboro;
+}
+
+img {
+    width: 100%; /* Full width for smaller screens */
+    margin-top: 10px; /* Adjust margin space */
+}
+
+button {
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin-left: 10px; /* Adjust margin space */
+    font-family: Italic;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+/* Media query for screens with a maximum width of 675px */
+@media screen and (max-width: 675px) {
+
+    body {
+        background-image: url(https://images.unsplash.com/photo-1639174326326-6e2ef8d8ae39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure background image covers the entire viewport */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar #snap,
+    .Login,
+    .register {
+        margin-left: 10px; /* Adjust margin space */
+    }
+
+    img {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    h1,
+    h3,
+    button {
+        margin-left: 10px; /* Adjust margin space */
+    }
+
+    .dropdown {
+        margin-top: 10px; /* Adjust margin space */
+    }
+
+    .dropdown-content {
+        background-color: #333; /* Change the background color for better contrast */
+    }
+
+    .dropdown-content a {
+        color: white;
+    }
+}
